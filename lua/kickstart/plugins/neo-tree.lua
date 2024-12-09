@@ -8,6 +8,8 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
     'MunifTanjim/nui.nvim',
+    -- not working
+    -- '3rd/image.nvim',
   },
   cmd = 'Neotree',
   keys = {
@@ -15,7 +17,11 @@ return {
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        visible = true,
+      },
       window = {
+        position = 'right',
         mappings = {
           ['\\'] = 'close_window',
         },
