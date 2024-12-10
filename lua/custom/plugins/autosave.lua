@@ -32,7 +32,7 @@ return {
   lazy = false,
   keys = {
     -- toggle autosave
-    { '<leader>n', '<cmd>ASToggle<CR>', desc = 'Toggle auto-save' },
+    { '<leader>ts', '<cmd>ASToggle<CR>', desc = '[T]oggle auto-[s]ave' },
   },
   config = function()
     require('auto-save').setup {
